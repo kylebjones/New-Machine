@@ -27,8 +27,6 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 Write-Output "Enabling and Running Windows Update"
 
 Enable-MicrosoftUpdate
-# Disable-MicrosoftUpdate
-# Install-WindowsUpdate -AcceptEula
 
 Write-Output "Beginning Chocolatey installs"
 
@@ -40,9 +38,11 @@ choco install Firefox
 ## Common System Tools
 
 choco install 7zip.install 
-choco install notepadplusplus.install
-choco install rdcman
-
-# choco install google-backup-and-sync
-
 choco install adobereader
+
+## These are more common bare-metal / desktop usage installations
+
+# choco install f.lux
+# choco install rdcman
+# choco install google-backup-and-sync
+# choco install greenshot

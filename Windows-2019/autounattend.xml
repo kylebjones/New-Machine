@@ -48,7 +48,7 @@
             </ImageInstall>
             <UserData>
                 <ProductKey>
-                    <Key>CHND7-F3682-T9HH4-J6MVV-X78WF</Key>
+                    <Key>GWN9T-GGVK6-VT89W-8Q7MW-W464R</Key>
                     <WillShowUI>OnError</WillShowUI>
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
@@ -125,16 +125,11 @@
                     <Order>4</Order>
                     <Description>Disable password expiration for vagrant user</Description>
                 </SynchronousCommand>
-                <SynchronousCommand wcm:action="add">
-                    <CommandLine>cmd.exe /c a:\microsoft-updates.bat</CommandLine>
-                    <Order>98</Order>
-                    <Description>Enable Microsoft Updates</Description>
-                </SynchronousCommand>
-                <SynchronousCommand wcm:action="add">
-                    <CommandLine>cmd.exe /c C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -File a:\win-updates.ps1</CommandLine>
-                    <Description>Install Windows Updates</Description>
-                    <Order>100</Order>
-                    <RequiresUserInput>true</RequiresUserInput>
+                <SynchronousCommand wcm:action="add">	
+                    <CommandLine>cmd.exe /c C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -File a:\Install-WindowsUpdates.ps1</CommandLine>	
+                    <Description>Install Windows Updates</Description>	
+                    <Order>100</Order>	
+                    <RequiresUserInput>true</RequiresUserInput>	
                 </SynchronousCommand>
             </FirstLogonCommands>
         </component>

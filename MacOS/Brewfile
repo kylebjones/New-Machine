@@ -4,13 +4,7 @@ tap "homebrew/core"
 
 brew "git"
 
-brew "packer"
-
-brew "node"
-
 cask "adobe-acrobat-reader"
-
-cask "android-studio"
 
 cask "flux"
 
@@ -26,12 +20,6 @@ cask "microsoft-teams"
 
 cask "spectacle"
 
-cask "vagrant"
-
-cask "virtualbox"
-
 cask "google-chrome"
-
-cask "visual-studio-code"
 
 cask "iterm2"

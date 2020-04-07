@@ -11,7 +11,5 @@ choco install visualstudio2019community ## visualstudio2019enterprise
 choco install visualstudio2019-workload-netweb 
 choco install visualstudio2019-workload-azure 
 choco install visualstudio2019-workload-netcoretools
-
-choco install dotnetcore-sdk
-
-# choco install dotnet4.7.2
+choco install visualstudio2019-workload-node
+choco install visualstudio2019-workload-netcrossplat
